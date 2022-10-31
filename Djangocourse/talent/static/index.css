@@ -1,0 +1,114 @@
+body{
+     display: flex;
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+     background: url('Screenshot (301).png');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.mainbox{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 23px;
+    width:600px ;
+    margin: 157px 382px;
+    background-color: white;
+
+
+}
+.formcenter {
+    display: flex;
+    justify-content: center;
+}
+
+
+.title h1{
+    margin: 0px;
+    text-align: center;
+}
+.input input{
+    width: 565px;
+    padding: 12px 10px;;
+}
+.label {
+    padding: 6px 0px;
+    font-size: 26px;
+}
+.submit input{
+
+    padding: 2px 49px;
+    margin: 3px 93px;
+    text-decoration: none;
+    color: #020a02;
+    border: 2px solid #e9e6e6;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #e9e6e6;
+    border: 1px solid black;
+}
+.submit  :hover{
+    color: #e9e6e6;
+    border: 2px solid #020a02;
+    background-color: #020a02;
+
+}
+
+.submit{
+    display: inline-block;
+}
+.reset{
+    display: inline-block;
+}
+.reset input {
+
+    padding: 2px 49px;
+
+    text-decoration: none;
+    color: #020a02;
+    border: 2px solid #e9e6e6;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #e9e6e6;
+    border: 1px solid black;
+}
+.reset  :hover{
+    color: #e9e6e6;
+    border: 2px solid #020a02;
+    background-color: #020a02;
+
+}
+
+.topnav {
+  background-color: #333;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /*overflow: hidden;*/
+  width: 100%;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #333;
+  text-align: center;
+  padding: 11px 11px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+
+  color: white;
+}
+

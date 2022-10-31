@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concern Form</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+  </head>
+  <body>
+    <div class="topnav">
+         <a href="/logout">
+  <button type="button" class="btn btn-outline-secondary">
+    Logout
+  </button>
+ </a>
+        </div>
+    <div class="formcenter">
+    <form  method= "post"   action="/index/">
+       {% csrf_token %}
+      <div class="mainbox">
+          <div class="title">
+              <h1>Concern Form</h1>
+          </div>
+        <div class="label">
+          <label>Employee Id</label><br />
+        </div>
+        <div class="input">
+          <input type="text" size="10" placeholder="Enter your Employee Id" id="employeeid" name="employeeid">
+        </div>
+
+        <div class="label">
+          <label>Full Name</label><br />
+        </div>
+        <div class="input">
+          <input type="text" placeholder="Enter your Name" id="fullname" name="fullname">
+        </div>
+        <div class="label">
+          <label>Email-id</label><br />
+        </div>
+        <div class="input">
+          <input type="email" placeholder="Enter your Email Id" id="emailid" name="emailid">
+        </div>
+        <div class="label">
+          <label>Concern</label><br />
+        </div>
+        <div class="input">
+            <textarea rows="7" cols="77"  id="concern" name="concern"> Write Your Mental Health Issue </textarea>
+        </div> </br>
+        <div class="submit">
+            <input type="submit" value="Submit">
+        </div>
+        <div class="reset">
+            <input type="reset" value="Reset">
+        </div>
+
+      </div>
+        <footer style="margin: 20px auto; text-align: center; color: black;">
+        <p>Copyright © 2022. Created by Arya patel</p>
+
+    </footer>
+   </form>
+ </div>
+  </body>
+</html>
